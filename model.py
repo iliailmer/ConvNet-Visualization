@@ -128,6 +128,3 @@ class DeconvNet(nn.Module):
         x = self.classifier(x.view(-1, 256*6*6))
 
         return x, (y_1, y_2, y_3, y_4, y_5)
-
-
-net = DeconvNet().cuda()
